@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    cpu: "5m"
+    memory: "10Mi"
+  limits:
+    cpu: "10m"
+    memory: "20Mi"
+
+service: NodePort
